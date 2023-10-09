@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+
+body{
+    background-color: blanchedalmond;
+}
+
+.main{
+    color: brown;
+}
+
+.heading{
+    color: olive;
+    text-align: center;
+}
+
+.ingredients{
+    color: olive;
+    border: 1px solid black;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    animation: ingredients;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    }
+
+@keyframes ingredients{
+    0%{top: -600px;}
+    100% {top: 0px;}
+}
+
+.ingredients-table {
+    color: olive;
+    border: 1px solid black;
+    margin-left: 10rem;
+
+}
+
+.instructions {
+    border: 1px solid black;
+    width: 75%;
+    margin: 0 auto;
+
+}
+
+.image {
+    width: 475px;
+    height: 8px; ;
+    margin: 0 auto;
+    position: relative;
+    animation: image;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    }
+    
+    @keyframes image {
+        0% {left: -1000px;}
+        85% {left: 50px;}
+        100% {left: 0;}
+    }
+
+.instructions ol {
+    border: 1px solid orange;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.footer {
+    color: peru;
+    text-align: center;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 2rem;
+    opacity: 0;
+    padding: 1rem;
+    text-decoration: wheat;
+    text-transform: uppercase;
+    animation: footer;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    margin: 0;
+    }
+    
+    @keyframes footer {
+        0% {opacity: 0;} 
+        100% {opacity: 1;}
+    }
